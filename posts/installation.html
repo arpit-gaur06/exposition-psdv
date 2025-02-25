@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Arpit Gaur, Prince A Patel, Monika Nagliya">
-<meta name="dcterms.date" content="2025-02-22">
-<meta name="description" content="Examples and Explanations">
+<meta name="dcterms.date" content="2025-02-24">
+<meta name="description" content="Installation, Setup and Examples">
 
-<title>Simple Visualisations and Examples</title>
+<title>Getting Started</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,7 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -105,15 +105,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
-<script src="https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js" crossorigin="anonymous"></script>
 
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -158,23 +154,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Simple Visualisations and Examples</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">VISUALIZATION</div>
-  </div>
-  </div>
+<h1 class="title">Getting Started</h1>
+</div>
 
 <div>
   <div class="description">
-    Examples and Explanations
+    Installation, Setup and Examples
   </div>
 </div>
 
@@ -191,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 22, 2025</p>
+      <p class="date">February 24, 2025</p>
     </div>
   </div>
   
@@ -203,248 +194,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>After the installation, we can start using PyVista for 3D visualization. Here area some simple example to plot and analyse 3D mesh:</p>
-<div id="cell-2" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyvista <span class="im">as</span> pv</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a simple mesh (sphere)</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>sphere <span class="op">=</span> pv.Sphere()</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the mesh</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sphere.plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"e2991e87caa84e0390245820662b43b2","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
-</script>
-</div>
-</div>
-<div id="cell-3" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyvista <span class="im">import</span> examples</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-4" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mesh <span class="op">=</span> examples.load_random_hills() <span class="co"># automatically download</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>contours <span class="op">=</span> mesh.contour()</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>contours</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">Header</td>
-<td data-quarto-table-cell-role="th">Data Arrays</td>
-</tr>
-<tr class="even">
-<td><table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">PolyData</td>
-<td data-quarto-table-cell-role="th">Information</td>
-</tr>
-<tr class="even">
-<td>N Cells</td>
-<td>3709</td>
-</tr>
-<tr class="odd">
-<td>N Points</td>
-<td>3731</td>
-</tr>
-<tr class="even">
-<td>N Strips</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>X Bounds</td>
-<td>-1.000e+01, 1.000e+01</td>
-</tr>
-<tr class="even">
-<td>Y Bounds</td>
-<td>-2.309e-14, 2.000e+01</td>
-</tr>
-<tr class="odd">
-<td>Z Bounds</td>
-<td>9.573e-01, 7.483e+00</td>
-</tr>
-<tr class="even">
-<td>N Arrays</td>
-<td>2</td>
-</tr>
-</tbody>
-</table></td>
-<td><table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">Name</td>
-<td data-quarto-table-cell-role="th">Field</td>
-<td data-quarto-table-cell-role="th">Type</td>
-<td data-quarto-table-cell-role="th">N Comp</td>
-<td data-quarto-table-cell-role="th">Min</td>
-<td data-quarto-table-cell-role="th">Max</td>
-</tr>
-<tr class="even">
-<td>Normals</td>
-<td>Points</td>
-<td>float32</td>
-<td>3</td>
-<td>-8.643e-01</td>
-<td>9.992e-01</td>
-</tr>
-<tr class="odd">
-<td><strong>Elevation</strong></td>
-<td>Points</td>
-<td>float32</td>
-<td>1</td>
-<td>9.573e-01</td>
-<td>7.483e+00</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="cell-5" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>mesh.plot()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"e87cacbb37164a9ca7ba087e04be41f1","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
-</script>
-</div>
-</div>
-<div id="cell-6" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyvista <span class="im">as</span> pv</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>grid <span class="op">=</span> pv.ImageData(dimensions<span class="op">=</span>(<span class="dv">200</span>, <span class="dv">200</span>, <span class="dv">200</span>))</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>grid[<span class="st">'scalars'</span>] <span class="op">=</span> np.linalg.norm(grid.center <span class="op">-</span> grid.points, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>grid</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">Header</td>
-<td data-quarto-table-cell-role="th">Data Arrays</td>
-</tr>
-<tr class="even">
-<td><table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">ImageData</td>
-<td data-quarto-table-cell-role="th">Information</td>
-</tr>
-<tr class="even">
-<td>N Cells</td>
-<td>7880599</td>
-</tr>
-<tr class="odd">
-<td>N Points</td>
-<td>8000000</td>
-</tr>
-<tr class="even">
-<td>X Bounds</td>
-<td>0.000e+00, 1.990e+02</td>
-</tr>
-<tr class="odd">
-<td>Y Bounds</td>
-<td>0.000e+00, 1.990e+02</td>
-</tr>
-<tr class="even">
-<td>Z Bounds</td>
-<td>0.000e+00, 1.990e+02</td>
-</tr>
-<tr class="odd">
-<td>Dimensions</td>
-<td>200, 200, 200</td>
-</tr>
-<tr class="even">
-<td>Spacing</td>
-<td>1.000e+00, 1.000e+00, 1.000e+00</td>
-</tr>
-<tr class="odd">
-<td>N Arrays</td>
-<td>1</td>
-</tr>
-</tbody>
-</table></td>
-<td><table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">Name</td>
-<td data-quarto-table-cell-role="th">Field</td>
-<td data-quarto-table-cell-role="th">Type</td>
-<td data-quarto-table-cell-role="th">N Comp</td>
-<td data-quarto-table-cell-role="th">Min</td>
-<td data-quarto-table-cell-role="th">Max</td>
-</tr>
-<tr class="even">
-<td><strong>scalars</strong></td>
-<td>Points</td>
-<td>float64</td>
-<td>1</td>
-<td>8.660e-01</td>
-<td>1.723e+02</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="cell-7" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>opacity <span class="op">=</span> np.zeros(<span class="dv">100</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>opacity[::<span class="dv">10</span>] <span class="op">=</span> np.geomspace(<span class="fl">0.01</span>, <span class="fl">0.75</span>, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-8" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>pl <span class="op">=</span> pv.Plotter()</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>pl.add_volume_clip_plane(grid, normal<span class="op">=</span><span class="st">'-x'</span>, opacity<span class="op">=</span>opacity[::<span class="op">-</span><span class="dv">1</span>], cmap<span class="op">=</span><span class="st">'magma'</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>pl.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"ed4687fcf57c4cf39d4c63586eb1a19f","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
-</script>
-</div>
-</div>
-<div id="cell-9" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyvista</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(seed<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>point_cloud <span class="op">=</span> rng.random((<span class="dv">100</span>, <span class="dv">3</span>))</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>pdata <span class="op">=</span> pyvista.PolyData(point_cloud)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>pdata[<span class="st">'orig_sphere'</span>] <span class="op">=</span> np.arange(<span class="dv">100</span>)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># create many spheres from the point cloud</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>sphere <span class="op">=</span> pyvista.Sphere(radius<span class="op">=</span><span class="fl">0.02</span>, phi_resolution<span class="op">=</span><span class="dv">10</span>, theta_resolution<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>pc <span class="op">=</span> pdata.glyph(scale<span class="op">=</span><span class="va">False</span>, geom<span class="op">=</span>sphere, orient<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>pc.plot(cmap<span class="op">=</span><span class="st">'Reds'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"3b7445d0a3d845cb931cf3dbf2b30f3c","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
-</script>
-</div>
-</div>
-<div id="cell-10" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pyvista <span class="im">import</span> examples</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mesh <span class="op">=</span> examples.download_dragon()</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>mesh[<span class="st">'scalars'</span>] <span class="op">=</span> mesh.points[:, <span class="dv">1</span>]</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>mesh.plot(cpos<span class="op">=</span><span class="st">'xy'</span>, cmap<span class="op">=</span><span class="st">'plasma'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id":"65a89c4612424222ba2ab4deadc8c4e8","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
-</script>
-</div>
-</div>
+<section id="installation" class="level1">
+<h1>Installation</h1>
+<p><strong>1. Install Pyvista:</strong></p>
+<p>The only prerequisite for installing PyVista is Python itself. We can use Anaconda or Pip as virtual environment and package manager for Python.</p>
+<p>PyVista can be installed by <code>conda-forge</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>conda install <span class="op">-</span>c conda<span class="op">-</span>forge pyvista</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or can be installed via <code>pip</code> by the following command:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pip install pyvista</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will automatically install PyVista along with all the necessary dependencies.</p>
+<p><strong>2. Install <code>vtk</code> for 3D Visualization:</strong></p>
+<p>PyVista builds on VTK, so if you’re running into issues with installation or if you want to manually install VTK, you can install it separately:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pip install vtk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>3. Verify the Installation:</strong></p>
+<p>Once installed, you can verify if everything is set up correctly by opening a Python environment (either a Python shell or a Jupyter notebook) and typing:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pyvista <span class="im">as</span> pv</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pv.__version__)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>4. Optional: Install <code>trame</code> for 3D Visualization:</strong></p>
+<p>We will be going to install <code>trame</code> library which is an optional dependency for interactive notebook rendering.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pip install trame<span class="op">-</span>vuetify trame<span class="op">-</span>vtk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will open an interactive 3D plot. You can rotate, zoom, and inspect the mesh.</p>
+<p>With that, we’re ready to use PyVista!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nipun Batra">
-<meta name="dcterms.date" content="2025-02-14">
-<meta name="description" content="Welcome Post">
+<meta name="author" content="Arpit Gaur, Prince A Patel, Monika Nagliya">
+<meta name="dcterms.date" content="2025-02-22">
+<meta name="description" content="Useful Attributes and Features">
 
-<title>Welcome</title>
+<title>Key Features</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,35 +72,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -189,12 +126,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome</h1>
+<h1 class="title">Key Features</h1>
 </div>
 
 <div>
   <div class="description">
-    Welcome Post
+    Useful Attributes and Features
   </div>
 </div>
 
@@ -204,14 +141,14 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Nipun Batra </p>
+             <p>Arpit Gaur, Prince A Patel, Monika Nagliya </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 14, 2025</p>
+      <p class="date">February 22, 2025</p>
     </div>
   </div>
   
@@ -223,44 +160,58 @@ window.Quarto = {
 </header>
 
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<p><strong>Hello world</strong>, this is my first blog post.</p>
-<p>I can write in markdown</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello World"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>I can also write math equations:</p>
-<p><span class="math display">\[
-y = x^2
-\]</span></p>
-<p>I can create lists easily:</p>
+<section id="key-features-of-pyvista" class="level1">
+<h1>Key Features of PyVista</h1>
+<p><strong>1. 3D Visualization:</strong></p>
 <ul>
-<li>One</li>
-<li>Two</li>
+<li>PyVista simplifies the rendering of 3D objects such as meshes, point clouds, structured grids, and volumetric data. It provides an intuitive interface for visualizing geometric and scientific datasets.</li>
 </ul>
-<p>I can also create numbered lists:</p>
-<ol type="1">
-<li>One</li>
-<li>Two</li>
-</ol>
-<p>Or, create a table:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alice</td>
-<td>20</td>
-</tr>
-<tr class="even">
-<td>Bob</td>
-<td>21</td>
-</tr>
-</tbody>
-</table>
+<p>Example: Displaying a 3D sphere.</p>
+<p><strong>2. Mesh Analysis and Processing:</strong></p>
+<ul>
+<li>PyVista includes tools for working with and analyzing 3D meshes. It supports operations such as slicing, clipping, smoothing, decimating, and extracting surface features.</li>
+</ul>
+<p>Example: Slicing a 3D model.</p>
+<p><strong>3. Integration with NumPy &amp; SciPy:</strong></p>
+<ul>
+<li>PyVista supports NumPy arrays for efficient numerical computation. You can directly manipulate mesh data using NumPy operations.</li>
+</ul>
+<p>Example: Accessing and modifying point coordinates.</p>
+<p><strong>4. Interactive Plots:</strong></p>
+<ul>
+<li>PyVista supports interactive 3D visualization, allowing users to zoom, rotate, and pan within the rendered scene.</li>
+</ul>
+<p>Example: Creating an interactive plot.</p>
+<p><strong>5. Export &amp; Import of Meshes:</strong></p>
+<ul>
+<li>PyVista supports various 3D file formats, such as VTK, STL, PLY, OBJ, and more.</li>
+</ul>
+<p>Example: Saving and loading a mesh.</p>
+<p><strong>6. Parallel Processing for Performance:</strong></p>
+<ul>
+<li>PyVista can utilize multi-threading and parallel processing to handle large datasets efficiently.</li>
+</ul>
+<p>Example: Using parallel computing in PyVista (enabled internally when processing large data).</p>
+<p><strong>7. Jupyter Notebook Support:</strong></p>
+<ul>
+<li>PyVista works seamlessly with Jupyter Notebooks, allowing inline visualization of 3D models.</li>
+</ul>
+<p>Example: Running PyVista in a Jupyter Notebook.</p>
+<p><strong>8. Customizable Rendering &amp; Advanced Visualization:</strong></p>
+<ul>
+<li>PyVista supports various rendering options like lighting, shading, colormaps, and transparency for detailed visual analysis.</li>
+</ul>
+<p>Example: Applying shading and transparency.</p>
+<p><strong>9. Volume Rendering:</strong></p>
+<ul>
+<li>PyVista can render volumetric data, such as medical imaging (CT scans, MRI).</li>
+</ul>
+<p>Example: Volume rendering.</p>
+<p><strong>10. Geospatial &amp; Scientific Data Visualization:</strong></p>
+<ul>
+<li>PyVista supports structured and unstructured grid datasets, making it useful for engineering simulations, geology, fluid dynamics, and medical imaging.</li>
+</ul>
+<p>Example: Visualizing structured grid data.</p>
 
 
 </section>
