@@ -21,6 +21,13 @@
     "text": "Installation\n1. Install Pyvista:\nThe only prerequisite for installing PyVista is Python itself. We can use Anaconda or Pip as virtual environment and package manager for Python.\nPyVista can be installed by conda-forge:\nconda install -c conda-forge pyvista\nor can be installed via pip by the following command:\npip install pyvista\nThis will automatically install PyVista along with all the necessary dependencies.\n2. Install vtk for 3D Visualization:\nPyVista builds on VTK, so if you’re running into issues with installation or if you want to manually install VTK, you can install it separately:\npip install vtk\n3. Verify the Installation:\nOnce installed, you can verify if everything is set up correctly by opening a Python environment (either a Python shell or a Jupyter notebook) and typing:\nimport pyvista as pv\nprint(pv.__version__)\n4. Optional: Install trame for 3D Visualization:\nWe will be going to install trame library which is an optional dependency for interactive notebook rendering.\npip install trame-vuetify trame-vtk\nThis will open an interactive 3D plot. You can rotate, zoom, and inspect the mesh.\nWith that, we’re ready to use PyVista!"
   },
   {
+    "objectID": "posts/conclusion.html",
+    "href": "posts/conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "PyVista is a powerful and user-friendly library for 3D visualization and mesh analysis. If you’re starting with PyVista, the official documentation and example gallery are the best places to begin. This blog is just an attempt to demonstrate some aspects of the PyVista library. For deeper insights, check out VTK documentation, relevant books, and the community forums.\nMoreover, PyVista is a versatile tool for 3D visualization and data analysis across multiple domains, including engineering, medicine, robotics, game development, structural analysis, AI, and environmental science. Its ease of use and integration with NumPy and VTK make it an essential tool for professionals and researchers."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "",
