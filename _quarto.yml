@@ -3,19 +3,24 @@ project:
   output-dir: docs
 
 website:
-  title: "Quarto Template"
   navbar:
+    logo: "pyvista_logo.png"
     right:
       - href: index.qmd
         text: Home
       - href: blog.qmd
         text: Blog
+      - href: references.qmd
+        text: References
+      - href: about.qmd
+        text: Team
 
 
 format:
   html:
     theme:
       light: [litera, styles.scss]
+      dark: [darkly, styles-dark.scss]
     highlight-style: a11y-dark
     mainfont: "Roboto"
     code-copy: true
