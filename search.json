@@ -2,16 +2,16 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "Quarto Blog",
+    "title": "The Ultimate 3-D Visualization Python Library",
     "section": "",
-    "text": "Simple Visualisation\n\n\n\n\n\n\nML\n\n\n\n\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\n\n\nWelcome Post\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\nNo matching items"
+    "text": "Simple Visualisation\n\n\n\n\n\n\nML\n\n\n\n\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome\n\n\n\n\n\nWelcome Post\n\n\n\n\n\nFeb 14, 2025\n\n\nNipun Batra\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome.html",
-    "href": "posts/welcome.html",
-    "title": "Welcome",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
     "section": "",
-    "text": "Welcome\nHello world, this is my first blog post.\nI can write in markdown\nprint(\"Hello World\")\nI can also write math equations:\n\\[\ny = x^2\n\\]\nI can create lists easily:\n\nOne\nTwo\n\nI can also create numbered lists:\n\nOne\nTwo\n\nOr, create a table:\n\n\n\nName\nAge\n\n\n\n\nAlice\n20\n\n\nBob\n21"
+    "text": "3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)\n\n\nPyVista is an open-source Python library that provides tools for 3D visualization and analysis of scientific and engineering data. It is built on top of VTK (Visualization Toolkit) and offers an easy-to-use, Pythonic API for creating and interacting with 3D models, meshes, and volumetric data.\n\nPythonic VTK: a high-level API to the Visualization Toolkit (VTK)\nmesh data structures and filtering methods for spatial datasets\n3D plotting made simple and built for large/complex data geometries\n\nPyVista is a helper library for the Visualization Toolkit (VTK) that takes a different approach on interfacing with VTK through NumPy and direct array access. This package provides a Pythonic, well-documented interface exposing VTK’s powerful visualization backend to facilitate rapid prototyping, analysis, and visual integration of spatially referenced datasets.\nThis module can be used for scientific plotting for presentations and research papers as well as a supporting module for other mesh dependent Python modules."
   },
   {
     "objectID": "posts/visualisation.html",
@@ -21,10 +21,24 @@
     "text": "import numpy as np\nimport matplotlib.pyplot as plt\n%matplotlib inline\n%config InlineBackend.figure_format = 'retina'\n\n\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\n\nplt.plot(x, y)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Quarto Template",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
     "section": "",
-    "text": "Quarto template Text!"
+    "text": "Meet the Team\nMember 1: Prince A Patel (24110248)\nMember 2: Monika Nagliya (24110209)\nMember 3: Arpit Gaur (24110052)"
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome\nHello world, this is my first blog post.\nI can write in markdown\nprint(\"Hello World\")\nI can also write math equations:\n\\[\ny = x^2\n\\]\nI can create lists easily:\n\nOne\nTwo\n\nI can also create numbered lists:\n\nOne\nTwo\n\nOr, create a table:\n\n\n\nName\nAge\n\n\n\n\nAlice\n20\n\n\nBob\n21"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "",
+    "section": "",
+    "text": "PyVista is a powerful and user-friendly library for 3D visualization and mesh analysis. It simplifies working with scientific and engineering datasets by providing an intuitive API while leveraging VTK’s powerful capabilities. PyVista is a versatile tool for 3D visualization and data analysis across multiple domains, including engineering, medicine, robotics, game development, structural analysis, AI, and environmental science. Its ease of use and integration with NumPy and VTK make it an essential tool for professionals and researchers.\nHere are some reputable sources and further readings on PyVista: Official Documentation & Tutorials\n\nPyVista Documentation – The official documentation with API references, tutorials, and examples. 🔗https://docs.pyvista.org/\nPyVista GitHub Repository – Source code, issues, and community contributions. 🔗https://github.com/pyvista/pyvista\nThe original paper published by devlopers on Journal of Open Source Software. 🔗https://joss.theoj.org/papers/10.21105/joss.01450\nVTK: The Visualization Toolkit – PyVista is built on top of VTK, which is a well-documented and widely used library for scientific visualization. 🔗https://vtk.org/"
   }
 ]

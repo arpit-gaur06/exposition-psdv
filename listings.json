@@ -3,7 +3,8 @@
     "listing": "/blog.html",
     "items": [
       "/posts/visualisation.html",
-      "/posts/welcome.html"
+      "/posts/welcome.html",
+      "/posts/conclusion.html"
     ]
   }
 ]
