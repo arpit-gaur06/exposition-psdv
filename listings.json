@@ -3,10 +3,10 @@
     "listing": "/blog.html",
     "items": [
       "/posts/installation.html",
-      "/posts/uses.html",
-      "/posts/conclusion.html",
+      "/posts/welcome.html",
       "/posts/visualisation.html",
-      "/posts/welcome.html"
+      "/posts/uses.html",
+      "/posts/conclusion.html"
     ]
   }
 ]
